@@ -1,3 +1,4 @@
+<!--Base Nav Bar-->
 <!doctype html>
 <!--[if IE 9]> <html class="no-js ie9 fixed-layout" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-js " lang="en"> <!--<![endif]-->
@@ -11,7 +12,7 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
     <!-- Site Meta -->
-    <title>ISI Inc.-Organization</title>
+    <title>ISI Inc.</title>
     <meta name="keywords" content="Intelligent Systems Innovation">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -31,6 +32,7 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/skin.css">
+
 	<!--[if lt IE 9]>
 		<script src="js/vendor/html5shiv.min.js"></script>
 		<script src="js/vendor/respond.min.js"></script>
@@ -107,17 +109,19 @@
                             <li class="dropdown hassubmenu">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About ISI<span class="fa fa-angle-down"></span></a>
                                 <ul class="dropdown-menu" role="menu">
+                                    <li><a href="about.html#history">Company History</a></li>
+                                    <li><a href="about.html#corevalues">Company Core Values</a></li>
+                                    <li><a href="about.html#missionvision">Company Mission and Vision</a></li>
                                     <li><a href="organization.html">Organization</a></li>
-                                    <li><a href="corevalues.html">Company Core Values</a></li>
-				                    <li><a href="missionvision.html">Company Mission and Vision</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown hassubmenu">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Services <span class="fa fa-angle-down"></span></a>
                                 <ul class="dropdown-menu" role="menu">
-                                    <li><a href="LPR.html">License Plate Recognition</a></li>
-                                    <li><a href="Counting.html">Vehicle Counting & Classification</a></li>
-				                    <li><a href="People.html">People Detection</a></li>
+                                    <li><a href="services.html#LPR">License Plate Recognition</a></li>
+                                    <li><a href="services.html#People">People Detection</a></li>
+                                    <li><a href="services.html#Counting">Vehicle Counting & Classification</a></li>
+				                    
                                 </ul>
                             </li>
                             <li class="dropdown hassubmenu">
@@ -138,41 +142,104 @@
             </div><!-- end container -->
         </header>
 
+        <!--Header Banner-->
         <section id="banner" class="video-section js-height-banner">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="tagline-message event-title text-center">
-                            <br><br><br><br><br><br><h3>Meet the people inside ISI</h3>
+                            <br><br><br><br><br><br><h3>Our Services</h3>
                         </div>
                     </div><!-- end col -->
                 </div><!-- end row -->
             </div><!-- end container -->
         </section><!-- end section -->
 
-        <section class="section db p120">
+        <a name="LPR"></a>
+        <section class="section">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="tagline-message text-center">
-                            <h3>Say something smart here hehe...</h3>
+                    <div class="column-66">
+                    <h4 class="large-font"><b>License Plate Recognition</b></h4>
+                    <p>The LPR application can be used for vehicle identification and tagging. It includes the following features:</p><br>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <ul class="check">
+                                    <li>Automated detection of license plates in vehicle images.</li>
+                                    <li>Automated translation of characters from license plate images into text.</li>
+                                    <li>Automated record and report generation of detected license plates based on location, date, and time.</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div><!-- end col -->
-                </div><!-- end row -->
-            </div><!-- end container -->
-        </section><!-- end section -->
-        <!--Base footer starts here-->
+                    </div>
+                    <div class="column-33">
+                        <img src="upload/LicensePlate.png" width="335" height="471">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <a name="People"></a>
+        <section class="section gb">
+            <div class="container">
+                <div class="row">
+                    <div class="column-33">
+                        <img src="upload/PeopleDetection.png" width="335" height="471">
+                    </div>
+                    
+                    <div class="column-66">
+                    <h4 class="large-font"><b>People Detection</b></h4>
+                    <p>The people counting application can be used for monitoring pedestrian foot traffic. It includes the following features:</p><br>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <ul class="check">
+                                    <li>Automated detection and counting of people/pedestrian passing in CCTV coverage area.</li>
+                                    <li>Automated record and report generation of people volume and density based on location, date, and time.</li>
+                                </ul><!-- end check -->
+                            </div><!-- end col-lg-4 -->
+                        </div><!-- end row -->   
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <a name="Counting"></a>
+        <section class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="column-66">
+                    <h4 class="large-font"><b>Vehicle Classification and Counting</b></h4>
+                    <p>The vehicle counting/classification application can be used for traffic monitoring, congestion analysis, and
+                        transport/traffic planning. It includes the following features:</p><br>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <ul class="check">
+                                    <li>Automated detection and counting of vehicles passing in CCTV coverage areas.</li>
+                                    <li>Vehicle classification that can have customized labeling information based on client use-case.</li>
+                                    <li>Automated record and report generation of vehicle volume and density based on vehicle types, location, date, and time.</li>
+                                </ul><!-- end check -->
+                            </div><!-- end col-lg-4 -->
+                        </div><!-- end row -->   
+                    </div>
+                    <div class="column-33">
+                        <img src="upload/VehicleCounter.png" width="335" height="471">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--Footer--------------------------------------------------------------------------------------->
         <section id="home" class="video-section js-height-half">
-            <div class="image-box overlay"></div>
             <div class="container">
                 <div class="row callout">
-                    <div class="col-md-8">
-                        <br><br><p style="font-size: 50px; font-weight: bolder; color: white;" class="wow fadeInLeft">Complexity made</p>
+                    <div class="col-sm-8">
+                        <br><p style="font-size: 50px; font-weight: bolder; color: white;" class="wow fadeInLeft">Complexity made</p>
                         <p style="font-size: 70px; font-weight: bolder; color: white;" class="wow fadeInLeft">Easy!</p>
                     </div><!-- end col -->
             
-                    <div class="col-md-4 text-right">
-                        <br><br><br><p style="font-size: 40px; font-weight: bolder; color: white;" class="wow slideInRight">Start innovating with us today!</p>
+                    <div class="col-sm-4 text-right">
+                        <br><br><p style="font-size: 40px; font-weight: bolder; color: white;" class="wow slideInRight">Start innovating with us today!</p>
                     </div>
                 </div><!-- end row -->
             </div><!-- end container --> 
@@ -181,16 +248,15 @@
         <footer class="section footer noover">
             <div class="container">
                 <div class="row">
-
-                    <div class="col-lg-2 col-md-2">
+                    <div class="col-sm-6 pull left">
                         <div class="widget clearfix">
                             <h3 class="widget-title">Join us today</h3>
                             <p>Would you like to have a demo?</p>
-                            <a href="#" class="readmore">Contact us.</a>
+                            <a href="page-contact.html" class="readmore">Contact us.</a>
                         </div><!-- end widget -->
                     </div><!-- end col -->
 
-                    <div class="pull-right">
+                    <div class="col-sm-6 pull-right">
                         <div class ="text-right">
                             <div class="widget clearfix">
                                 <h3 class="widget-title">Support</h3>
@@ -227,16 +293,18 @@
                 </div>
             </div><!-- end container -->
         </div><!-- end copy -->
-    </div><!-- end wrapper -->
+        </div><!-- end wrapper -->
 
-    <!-- jQuery Files -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/carousel.js"></script>
-    <script src="js/animate.js"></script>
-    <script src="js/custom.js"></script>
-    <!-- VIDEO BG PLUGINS -->
-    <script src="js/videobg.js"></script>
+        <!-- jQuery Files -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/carousel.js"></script>
+        <script src="js/animate.js"></script>
+        <script src="js/custom.js"></script>
+        <!-- VIDEO BG PLUGINS -->
+        <script src="js/videobg.js"></script>
+        <!-- MAP & CONTACT -->
+        <script src="js/map.js"></script>
 
 </body>
 </html>

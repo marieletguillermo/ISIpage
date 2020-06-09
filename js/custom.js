@@ -1,5 +1,5 @@
 	$(".js-height-full").height($(window).height()/1.05);
-	$(".js-height-half").height($(window).height()/3);
+	$(".js-height-half").height($(window).height()/3.5);
 	$(".js-height-banner").height($(window).height()/2.7);
 	$(".js-height-parent").each(function() {
 	    $(this).height($(this).parent().first().height());
